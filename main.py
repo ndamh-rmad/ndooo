@@ -46,11 +46,6 @@ async def send_surah_to_channel():
         
         await asyncio.sleep(INTERVAL)
 
-def start_auto_sending(application):
-    """بدء الإرسال التلقائي في مهمة خلفية"""
-    loop = asyncio.get_event_loop()
-    loop.create_task(send_surah_to_channel())
-
 def main() -> None:
     """الدالة الرئيسية لتشغيل البوت"""
     application = Application.builder().token(TOKEN).build()
@@ -60,12 +55,13 @@ def main() -> None:
     application.add_handler(CommandHandler("surah", send_random_surah))
     application.add_handler(CommandHandler("status", check_bot_status))
     
-    # بدء الإرسال التلقائي
-    start_auto_sending(application)
+    # بدء الإرسال التلقائي في الخلفية
+    loop = asyncio.get_event_loop()
+    loop.create_task(send_surah_to_channel())
     
     # بدء البوت
-    application.run_polling()
     logger.info("البوت يعمل الآن...")
+    application.run_polling()
 
 if __name__ == "__main__":
     main()
