@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
@@ -12,17 +11,19 @@ from telegram.ext import Application, CommandHandler
 from surah_audio import surahs
 from commands import welcome, send_random_surah, check_bot_status
 
+# إعدادات البيئة
 TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 CHANNEL_ID = "@dzmmm"
-INTERVAL = 300  # كل 5 دقائق
+INTERVAL = 300  # إرسال كل 5 دقائق
 
-# إعدادات التسجيل
+# إعدادات اللوق
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
 logger = logging.getLogger(__name__)
 
+# إرسال سورة عشوائية للقناة
 async def send_surah_to_channel():
     bot = Bot(token=TOKEN)
     while True:
@@ -39,28 +40,33 @@ async def send_surah_to_channel():
                 read_timeout=60,
                 write_timeout=60
             )
-            logger.info(f"تم إرسال سورة {surah_name} إلى القناة")
+            logger.info(f"✅ تم إرسال سورة {surah_name} إلى القناة.")
         except Exception as e:
-            logger.error(f"حدث خطأ أثناء الإرسال: {e}")
+            logger.error(f"❌ خطأ أثناء الإرسال: {e}")
 
         await asyncio.sleep(INTERVAL)
 
+# دالة التشغيل الأساسية
 async def main():
     application = Application.builder().token(TOKEN).build()
 
-    # حذف أي Webhook سابق لتجنب التعارض
+    # حذف Webhook لتفادي تضارب الجلسات
     await application.bot.delete_webhook(drop_pending_updates=True)
 
-    # إضافة أوامر البوت
+    # أوامر البوت
     application.add_handler(CommandHandler("start", welcome))
     application.add_handler(CommandHandler("surah", send_random_surah))
     application.add_handler(CommandHandler("status", check_bot_status))
 
-    # إرسال تلقائي للسور في الخلفية
-    asyncio.get_event_loop().create_task(send_surah_to_channel())
+    # مهمة الإرسال التلقائي
+    asyncio.create_task(send_surah_to_channel())
 
-    logger.info("البوت يعمل الآن...")
+    logger.info("🚀 البوت يعمل الآن...")
     await application.run_polling()
 
+# لتشغيل البوت في بيئات async مثل Render
 if __name__ == "__main__":
-    asyncio.run(main())
+    import nest_asyncio
+    nest_asyncio.apply()
+    asyncio.get_event_loop().run_until_complete(main())
+
