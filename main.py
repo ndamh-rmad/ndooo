@@ -11,8 +11,7 @@ from telegram.ext import Application, CommandHandler
 from surah_audio import surahs
 from commands import welcome, send_random_surah, check_bot_status
 
-# تكوين البوت
-TOKEN = "7778433338:AAH3bMcbm5L3ooPWJIB5URc5HVXtakDWup"
+TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')  # سيقرأ التوكن من متغيرات البيئة
 CHANNEL_ID = "@dzmmm"
 INTERVAL = 300  # 5 دقائق بالثواني
 
