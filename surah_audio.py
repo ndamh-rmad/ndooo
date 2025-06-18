@@ -1,117 +1,459 @@
-# روابط مباشرة لصوتيات هيثم الدخين من موقع quranplayermp3.com
+# روابط السور من موقع everyayah.com (مشاري العفاسي)
 surahs = [
-    {"name": "الفاتحة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/001.mp3"},
-    {"name": "البقرة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/002.mp3"},
-    {"name": "آل عمران", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/003.mp3"},
-    {"name": "النساء", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/004.mp3"},
-    {"name": "المائدة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/005.mp3"},
-    {"name": "الأنعام", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/006.mp3"},
-    {"name": "الأعراف", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/007.mp3"},
-    {"name": "الأنفال", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/008.mp3"},
-    {"name": "التوبة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/009.mp3"},
-    {"name": "يونس", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/010.mp3"},
-    {"name": "هود", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/011.mp3"},
-    {"name": "يوسف", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/012.mp3"},
-    {"name": "الرعد", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/013.mp3"},
-    {"name": "إبراهيم", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/014.mp3"},
-    {"name": "الحجر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/015.mp3"},
-    {"name": "النحل", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/016.mp3"},
-    {"name": "الإسراء", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/017.mp3"},
-    {"name": "الكهف", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/018.mp3"},
-    {"name": "مريم", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/019.mp3"},
-    {"name": "طه", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/020.mp3"},
-    {"name": "الأنبياء", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/021.mp3"},
-    {"name": "الحج", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/022.mp3"},
-    {"name": "المؤمنون", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/023.mp3"},
-    {"name": "النور", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/024.mp3"},
-    {"name": "الفرقان", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/025.mp3"},
-    {"name": "الشعراء", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/026.mp3"},
-    {"name": "النمل", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/027.mp3"},
-    {"name": "القصص", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/028.mp3"},
-    {"name": "العنكبوت", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/029.mp3"},
-    {"name": "الروم", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/030.mp3"},
-    {"name": "لقمان", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/031.mp3"},
-    {"name": "السجدة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/032.mp3"},
-    {"name": "الأحزاب", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/033.mp3"},
-    {"name": "سبأ", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/034.mp3"},
-    {"name": "فاطر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/035.mp3"},
-    {"name": "يس", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/036.mp3"},
-    {"name": "الصافات", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/037.mp3"},
-    {"name": "ص", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/038.mp3"},
-    {"name": "الزمر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/039.mp3"},
-    {"name": "غافر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/040.mp3"},
-    {"name": "فصلت", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/041.mp3"},
-    {"name": "الشورى", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/042.mp3"},
-    {"name": "الزخرف", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/043.mp3"},
-    {"name": "الدخان", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/044.mp3"},
-    {"name": "الجاثية", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/045.mp3"},
-    {"name": "الأحقاف", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/046.mp3"},
-    {"name": "محمد", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/047.mp3"},
-    {"name": "الفتح", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/048.mp3"},
-    {"name": "الحجرات", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/049.mp3"},
-    {"name": "ق", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/050.mp3"},
-    {"name": "الذاريات", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/051.mp3"},
-    {"name": "الطور", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/052.mp3"},
-    {"name": "النجم", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/053.mp3"},
-    {"name": "القمر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/054.mp3"},
-    {"name": "الرحمن", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/055.mp3"},
-    {"name": "الواقعة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/056.mp3"},
-    {"name": "الحديد", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/057.mp3"},
-    {"name": "المجادلة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/058.mp3"},
-    {"name": "الحشر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/059.mp3"},
-    {"name": "الممتحنة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/060.mp3"},
-    {"name": "الصف", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/061.mp3"},
-    {"name": "الجمعة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/062.mp3"},
-    {"name": "المنافقون", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/063.mp3"},
-    {"name": "التغابن", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/064.mp3"},
-    {"name": "الطلاق", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/065.mp3"},
-    {"name": "التحريم", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/066.mp3"},
-    {"name": "الملك", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/067.mp3"},
-    {"name": "القلم", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/068.mp3"},
-    {"name": "الحاقة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/069.mp3"},
-    {"name": "المعارج", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/070.mp3"},
-    {"name": "نوح", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/071.mp3"},
-    {"name": "الجن", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/072.mp3"},
-    {"name": "المزمل", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/073.mp3"},
-    {"name": "المدثر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/074.mp3"},
-    {"name": "القيامة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/075.mp3"},
-    {"name": "الإنسان", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/076.mp3"},
-    {"name": "المرسلات", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/077.mp3"},
-    {"name": "النبأ", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/078.mp3"},
-    {"name": "النازعات", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/079.mp3"},
-    {"name": "عبس", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/080.mp3"},
-    {"name": "التكوير", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/081.mp3"},
-    {"name": "الانفطار", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/082.mp3"},
-    {"name": "المطففين", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/083.mp3"},
-    {"name": "الانشقاق", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/084.mp3"},
-    {"name": "البروج", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/085.mp3"},
-    {"name": "الطارق", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/086.mp3"},
-    {"name": "الأعلى", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/087.mp3"},
-    {"name": "الغاشية", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/088.mp3"},
-    {"name": "الفجر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/089.mp3"},
-    {"name": "البلد", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/090.mp3"},
-    {"name": "الشمس", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/091.mp3"},
-    {"name": "الليل", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/092.mp3"},
-    {"name": "الضحى", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/093.mp3"},
-    {"name": "الشرح", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/094.mp3"},
-    {"name": "التين", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/095.mp3"},
-    {"name": "العلق", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/096.mp3"},
-    {"name": "القدر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/097.mp3"},
-    {"name": "البينة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/098.mp3"},
-    {"name": "الزلزلة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/099.mp3"},
-    {"name": "العاديات", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/100.mp3"},
-    {"name": "القارعة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/101.mp3"},
-    {"name": "التكاثر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/102.mp3"},
-    {"name": "العصر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/103.mp3"},
-    {"name": "الهمزة", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/104.mp3"},
-    {"name": "الفيل", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/105.mp3"},
-    {"name": "قريش", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/106.mp3"},
-    {"name": "الماعون", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/107.mp3"},
-    {"name": "الكوثر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/108.mp3"},
-    {"name": "الكافرون", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/109.mp3"},
-    {"name": "النصر", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/110.mp3"},
-    {"name": "المسد", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/111.mp3"},
-    {"name": "الإخلاص", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/112.mp3"},
-    {"name": "الفلق", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/113.mp3"},
-    {"name": "الناس", "audio": "https://www.quranplayermp3.com/audio/haitham-al-dakhin/114.mp3"}
+    {
+        "name": "الفاتحة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/001.mp3"
+    },
+    {
+        "name": "البقرة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/002.mp3"
+    },
+    {
+        "name": "آل عمران",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/003.mp3"
+    },
+    {
+        "name": "النساء",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/004.mp3"
+    },
+    {
+        "name": "المائدة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/005.mp3"
+    },
+    {
+        "name": "الأنعام",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/006.mp3"
+    },
+    {
+        "name": "الأعراف",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/007.mp3"
+    },
+    {
+        "name": "الأنفال",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/008.mp3"
+    },
+    {
+        "name": "التوبة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/009.mp3"
+    },
+    {
+        "name": "يونس",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/010.mp3"
+    },
+    {
+        "name": "هود",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/011.mp3"
+    },
+    {
+        "name": "يوسف",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/012.mp3"
+    },
+    {
+        "name": "الرعد",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/013.mp3"
+    },
+    {
+        "name": "إبراهيم",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/014.mp3"
+    },
+    {
+        "name": "الحجر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/015.mp3"
+    },
+    {
+        "name": "النحل",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/016.mp3"
+    },
+    {
+        "name": "الإسراء",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/017.mp3"
+    },
+    {
+        "name": "الكهف",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/018.mp3"
+    },
+    {
+        "name": "مريم",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/019.mp3"
+    },
+    {
+        "name": "طه",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/020.mp3"
+    },
+    {
+        "name": "الأنبياء",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/021.mp3"
+    },
+    {
+        "name": "الحج",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/022.mp3"
+    },
+    {
+        "name": "المؤمنون",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/023.mp3"
+    },
+    {
+        "name": "النور",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/024.mp3"
+    },
+    {
+        "name": "الفرقان",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/025.mp3"
+    },
+    {
+        "name": "الشعراء",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/026.mp3"
+    },
+    {
+        "name": "النمل",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/027.mp3"
+    },
+    {
+        "name": "القصص",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/028.mp3"
+    },
+    {
+        "name": "العنكبوت",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/029.mp3"
+    },
+    {
+        "name": "الروم",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/030.mp3"
+    },
+    {
+        "name": "لقمان",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/031.mp3"
+    },
+    {
+        "name": "السجدة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/032.mp3"
+    },
+    {
+        "name": "الأحزاب",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/033.mp3"
+    },
+    {
+        "name": "سبأ",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/034.mp3"
+    },
+    {
+        "name": "فاطر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/035.mp3"
+    },
+    {
+        "name": "يس",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/036.mp3"
+    },
+    {
+        "name": "الصافات",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/037.mp3"
+    },
+    {
+        "name": "ص",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/038.mp3"
+    },
+    {
+        "name": "الزمر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/039.mp3"
+    },
+    {
+        "name": "غافر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/040.mp3"
+    },
+    {
+        "name": "فصلت",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/041.mp3"
+    },
+    {
+        "name": "الشورى",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/042.mp3"
+    },
+    {
+        "name": "الزخرف",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/043.mp3"
+    },
+    {
+        "name": "الدخان",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/044.mp3"
+    },
+    {
+        "name": "الجاثية",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/045.mp3"
+    },
+    {
+        "name": "الأحقاف",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/046.mp3"
+    },
+    {
+        "name": "محمد",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/047.mp3"
+    },
+    {
+        "name": "الفتح",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/048.mp3"
+    },
+    {
+        "name": "الحجرات",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/049.mp3"
+    },
+    {
+        "name": "ق",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/050.mp3"
+    },
+    {
+        "name": "الذاريات",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/051.mp3"
+    },
+    {
+        "name": "الطور",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/052.mp3"
+    },
+    {
+        "name": "النجم",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/053.mp3"
+    },
+    {
+        "name": "القمر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/054.mp3"
+    },
+    {
+        "name": "الرحمن",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/055.mp3"
+    },
+    {
+        "name": "الواقعة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/056.mp3"
+    },
+    {
+        "name": "الحديد",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/057.mp3"
+    },
+    {
+        "name": "المجادلة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/058.mp3"
+    },
+    {
+        "name": "الحشر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/059.mp3"
+    },
+    {
+        "name": "الممتحنة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/060.mp3"
+    },
+    {
+        "name": "الصف",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/061.mp3"
+    },
+    {
+        "name": "الجمعة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/062.mp3"
+    },
+    {
+        "name": "المنافقون",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/063.mp3"
+    },
+    {
+        "name": "التغابن",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/064.mp3"
+    },
+    {
+        "name": "الطلاق",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/065.mp3"
+    },
+    {
+        "name": "التحريم",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/066.mp3"
+    },
+    {
+        "name": "الملك",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/067.mp3"
+    },
+    {
+        "name": "القلم",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/068.mp3"
+    },
+    {
+        "name": "الحاقة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/069.mp3"
+    },
+    {
+        "name": "المعارج",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/070.mp3"
+    },
+    {
+        "name": "نوح",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/071.mp3"
+    },
+    {
+        "name": "الجن",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/072.mp3"
+    },
+    {
+        "name": "المزمل",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/073.mp3"
+    },
+    {
+        "name": "المدثر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/074.mp3"
+    },
+    {
+        "name": "القيامة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/075.mp3"
+    },
+    {
+        "name": "الإنسان",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/076.mp3"
+    },
+    {
+        "name": "المرسلات",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/077.mp3"
+    },
+    {
+        "name": "النبأ",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/078.mp3"
+    },
+    {
+        "name": "النازعات",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/079.mp3"
+    },
+    {
+        "name": "عبس",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/080.mp3"
+    },
+    {
+        "name": "التكوير",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/081.mp3"
+    },
+    {
+        "name": "الانفطار",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/082.mp3"
+    },
+    {
+        "name": "المطففين",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/083.mp3"
+    },
+    {
+        "name": "الانشقاق",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/084.mp3"
+    },
+    {
+        "name": "البروج",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/085.mp3"
+    },
+    {
+        "name": "الطارق",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/086.mp3"
+    },
+    {
+        "name": "الأعلى",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/087.mp3"
+    },
+    {
+        "name": "الغاشية",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/088.mp3"
+    },
+    {
+        "name": "الفجر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/089.mp3"
+    },
+    {
+        "name": "البلد",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/090.mp3"
+    },
+    {
+        "name": "الشمس",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/091.mp3"
+    },
+    {
+        "name": "الليل",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/092.mp3"
+    },
+    {
+        "name": "الضحى",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/093.mp3"
+    },
+    {
+        "name": "الشرح",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/094.mp3"
+    },
+    {
+        "name": "التين",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/095.mp3"
+    },
+    {
+        "name": "العلق",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/096.mp3"
+    },
+    {
+        "name": "القدر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/097.mp3"
+    },
+    {
+        "name": "البينة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/098.mp3"
+    },
+    {
+        "name": "الزلزلة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/099.mp3"
+    },
+    {
+        "name": "العاديات",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/100.mp3"
+    },
+    {
+        "name": "القارعة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/101.mp3"
+    },
+    {
+        "name": "التكاثر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/102.mp3"
+    },
+    {
+        "name": "العصر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/103.mp3"
+    },
+    {
+        "name": "الهمزة",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/104.mp3"
+    },
+    {
+        "name": "الفيل",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/105.mp3"
+    },
+    {
+        "name": "قريش",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/106.mp3"
+    },
+    {
+        "name": "الماعون",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/107.mp3"
+    },
+    {
+        "name": "الكوثر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/108.mp3"
+    },
+    {
+        "name": "الكافرون",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/109.mp3"
+    },
+    {
+        "name": "النصر",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/110.mp3"
+    },
+    {
+        "name": "المسد",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/111.mp3"
+    },
+    {
+        "name": "الإخلاص",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/112.mp3"
+    },
+    {
+        "name": "الفلق",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/113.mp3"
+    },
+    {
+        "name": "الناس",
+        "audio": "http://www.everyayah.com/data/Mishary_Alafasy_128kbps/114.mp3"
+    }
 ]
