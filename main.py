@@ -51,7 +51,7 @@ def start_auto_sending(application):
     loop = asyncio.get_event_loop()
     loop.create_task(send_surah_to_channel())
 
-def main():
+def main() -> None:
     """الدالة الرئيسية لتشغيل البوت"""
     application = Application.builder().token(TOKEN).build()
     
