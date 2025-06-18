@@ -1,8 +1,9 @@
-from telegram import ParseMode
+from telegram import Update
+from telegram.ext import ContextTypes
 from random import choice
 from surah_audio import surahs
 
-def welcome(update, context):
+async def welcome(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """ترحيب بالمسخدم عند استخدام الأمر /start"""
     welcome_message = """
     السلام عليكم ورحمة الله وبركاته
@@ -13,23 +14,24 @@ def welcome(update, context):
     /surah - إرسال سورة عشوائية
     /status - التحقق من حالة البوت
     """
-    update.message.reply_text(welcome_message, parse_mode=ParseMode.MARKDOWN)
+    await update.message.reply_text(welcome_message)
 
-def send_random_surah(update, context):
+async def send_random_surah(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """إرسال سورة عشوائية عند الطلب"""
     surah = choice(surahs)
     audio_url = surah["audio"]
     surah_name = surah["name"]
     reciter = "هيثم الدخين"
     
-    context.bot.send_audio(
+    await context.bot.send_audio(
         chat_id=update.message.chat_id,
         audio=audio_url,
         caption=f"سورة {surah_name}\nالقارئ: {reciter}",
-        timeout=60
+        read_timeout=60,
+        write_timeout=60
     )
 
-def check_bot_status(update, context):
+async def check_bot_status(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """الرد على حالة البوت"""
     status_message = "الحمد لله، البوت يعمل بشكل طبيعي 🚀"
-    update.message.reply_text(status_message)
+    await update.message.reply_text(status_message)
