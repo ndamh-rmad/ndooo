@@ -12,7 +12,7 @@ from surah_audio import surahs
 from commands import welcome, send_random_surah, check_bot_status
 
 # تكوين البوت
-TOKEN = "7778433338:AAH2O3DH0ZfonJ2mKeBXYSOtbjutBWvWlVQ"
+TOKEN = "7778433338:AAH3bMcbm5L3ooPWJIB5URc5HVXtakDWup"
 CHANNEL_ID = "@dzmmm"
 INTERVAL = 300  # 5 دقائق بالثواني
 
