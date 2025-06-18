@@ -1,14 +1,18 @@
+
+import os
 from telegram import Update
 from telegram.ext import ContextTypes
 from random import choice
 from surah_audio import surahs
+
+CHANNEL_ID = os.getenv('CHANNEL_ID', '@dzmmm')
 
 async def welcome(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """ترحيب بالمسخدم عند استخدام الأمر /start"""
     welcome_message = """
     السلام عليكم ورحمة الله وبركاته
     مرحباً بكم في بوت القرآن الكريم
-    
+
     الأوامر المتاحة:
     /start - رسالة الترحيب
     /surah - إرسال سورة عشوائية
@@ -17,14 +21,14 @@ async def welcome(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(welcome_message)
 
 async def send_random_surah(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """إرسال سورة عشوائية عند الطلب"""
+    """إرسال سورة عشوائية إلى القناة عند الطلب"""
     surah = choice(surahs)
     audio_url = surah["audio"]
     surah_name = surah["name"]
-    reciter = "هيثم الدخين"
-    
+    reciter = "مشاري راشد العفاسي"
+
     await context.bot.send_audio(
-        chat_id=update.message.chat_id,
+        chat_id=CHANNEL_ID,
         audio=audio_url,
         caption=f"سورة {surah_name}\nالقارئ: {reciter}",
         read_timeout=60,
